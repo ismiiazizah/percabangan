@@ -1,0 +1,49 @@
+package percabangan;
+
+import java.util.Scanner;
+
+public class Matematika {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int pilihan;
+        double angka1, angka2, hasil;
+
+        System.out.println("Menu Aplikasi Matematika");
+        System.out.println("1.Penambahan 2.Pengurangan 3.Perkalian 4.Pembagian");
+        System.out.print("Pilih Menu = ");
+        pilihan = input.nextInt();
+
+        if (pilihan == 1) {
+            System.out.print("Masukkan Angka Pertama = ");
+            angka1 = input.nextDouble();
+            System.out.print("Masukkan Angka Kedua = ");
+            angka2 = input.nextDouble();
+            hasil = angka1 + angka2;
+            System.out.println("Hasil Penambahan antara " + angka1 + " dan " + angka2 + " adalah " + hasil);
+        } else if (pilihan == 2) {
+            System.out.print("Masukkan Angka Pertama = ");
+            angka1 = input.nextDouble();
+            System.out.print("Masukkan Angka Kedua = ");
+            angka2 = input.nextDouble();
+            hasil = angka1 - angka2;
+            System.out.println("Hasil Pengurangan antara " + angka1 + " dan " + angka2 + " adalah " + hasil);
+        } else if (pilihan == 3) {
+            System.out.print("Masukkan Angka Pertama = ");
+            angka1 = input.nextDouble();
+            System.out.print("Masukkan Angka Kedua = ");
+            angka2 = input.nextDouble();
+            hasil = angka1 * angka2;
+            System.out.println("Hasil Perkalian antara " + angka1 + " dan " + angka2 + " adalah " + hasil);
+        } else if (pilihan == 4) {
+            System.out.print("Masukkan Angka Pertama = ");
+            angka1 = input.nextDouble();
+            System.out.print("Masukkan Angka Kedua = ");
+            angka2 = input.nextDouble();
+            hasil = angka1 / angka2;
+            System.out.println("Hasil Pembagian antara " + angka1 + " dan " + angka2 + " adalah " + hasil);
+        } else {
+            System.out.println("Pilihan menu anda salah");
+        }
+    }
+}
